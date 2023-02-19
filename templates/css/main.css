@@ -81,4 +81,28 @@ body {
   line-height: 2;
 }
 
+.services {
+  padding: 90px 0;
+}
+
+.services-row {
+  display: flex;
+  column-gap: 30px;
+}
+
+.service-card-img {
+  margin-bottom: 30px;
+}
+
+.service-card-title {
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.service-card p {
+  line-height: 2;
+}
+
 /*# sourceMappingURL=main.css.map */
