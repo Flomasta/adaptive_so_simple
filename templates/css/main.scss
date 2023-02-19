@@ -2,12 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 //COLORS
-$gray_header: #F1F1F1;
+$gray: #F1F1F1;
 $black: #000000;
 $orange: #FDA300;
 $active: #606060;
+$button: #070707;
+$white: #FFFFFF;
+$hover: #3b3939;
+$bright_gray: #828282;
 
-
+//GLOBALS
 body {
   font-family: 'Poppins', sans-serif;
   color: $black;
@@ -20,12 +24,42 @@ body {
   margin: 0 auto;
 }
 
+a {
+  color: $black;
+}
+
+.title-1 {
+  font-weight: 600;
+  font-size: 34px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 7px 22px;
+  background-color: $button;
+  border-radius: 30px;
+  font-size: 18px;
+  color: $white;
+  transition: background-color 0.2s ease-in, top 0.2s ease-in;
+
+}
+
+.btn:hover, .btn:focus {
+  background-color: $hover;
+}
+
+
+.btn:active {
+  background-color: $black;
+  position: relative;
+  top: 1px;
+}
 
 //HEADER
 
 
 .header {
-  background-color: $gray_header;
+  background-color: $gray;
   padding-top: 46px;
 }
 
@@ -39,7 +73,6 @@ body {
   font-weight: 700;
   font-size: 32px;
   line-height: 1;
-  color: $black;
   padding: 0 12px 3px 0;
   position: relative;
 }
@@ -65,9 +98,6 @@ body {
   font-size: 14px;
 }
 
-.nav-link {
-  color: $black;
-}
 
 .nav-link.active {
   color: $active;
@@ -124,4 +154,76 @@ body {
 
 .service-card p {
   line-height: 2;
+}
+
+//PORTFOLIO
+.portfolio {
+  padding: 90px 0;
+  background-color: $gray;
+}
+
+.portfolio-title {
+  margin-bottom: 70px;
+  text-align: center;
+}
+
+.project {
+  text-align: center;
+}
+
+.project + .project {
+  margin-top: 90px;
+}
+
+.project-image {
+  margin-bottom: 40px;
+  font-size: 18px;
+}
+
+.project-title a {
+  text-decoration: underline;
+}
+
+//FOOTER
+.contacts {
+  padding: 90px 0;
+  text-align: center;
+}
+
+
+.contacts-title {
+  margin-bottom: 40px;
+}
+
+
+.contacts-content {
+  font-size: 18px;
+  max-width: 480px;
+  margin: 0 auto 40px;
+
+
+}
+
+
+.contacts-content p + p {
+  margin-top: 1em;
+}
+
+.contacts-button {
+  margin-bottom: 80px;
+}
+
+
+.contacts-social {
+  display: flex;
+  justify-content: center;
+  column-gap: 60px;
+  align-items: center;
+  margin-bottom: 40px;
+
+}
+
+.contact-footer {
+  color: $bright_gray;
+
 }
