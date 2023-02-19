@@ -3,6 +3,7 @@
 body {
   font-family: "Poppins", sans-serif;
   color: #000000;
+  font-size: 14px;
 }
 
 .container {
@@ -56,6 +57,28 @@ body {
 
 .nav-link.active {
   color: #606060;
+}
+
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 30px;
+  margin-top: 76px;
+}
+
+.header-heading {
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 44px;
+}
+
+.header-content {
+  margin-top: 124px;
+  max-width: 550px;
+}
+
+.header-content p {
+  line-height: 2;
 }
 
 /*# sourceMappingURL=main.css.map */

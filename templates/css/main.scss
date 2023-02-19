@@ -11,6 +11,7 @@ $active: #606060;
 body {
   font-family: 'Poppins', sans-serif;
   color: $black;
+  font-size: 14px;
 }
 
 .container {
@@ -70,4 +71,27 @@ body {
 
 .nav-link.active {
   color: $active;
+}
+
+//HEADER CONTENT
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 30px;
+  margin-top: 76px;
+}
+
+.header-heading {
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 44px;
+}
+
+.header-content {
+  margin-top: 124px;
+  max-width: 550px;
+}
+
+.header-content p {
+  line-height: 2;
 }
