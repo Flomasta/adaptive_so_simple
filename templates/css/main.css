@@ -43,4 +43,19 @@ body {
   border-radius: 50%;
 }
 
+.nav-list {
+  display: flex;
+  column-gap: 50px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.nav-link {
+  color: #000000;
+}
+
+.nav-link.active {
+  color: #606060;
+}
+
 /*# sourceMappingURL=main.css.map */
