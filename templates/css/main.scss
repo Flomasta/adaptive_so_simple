@@ -1,0 +1,55 @@
+@import "reset.css";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+//COLORS
+$gray_header: #F1F1F1;
+$black: #000000;
+$orange: #FDA300;
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: $black;
+}
+
+.container {
+  max-width: 1230px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+
+//HEADER
+
+
+.header {
+  background-color: $gray_header;
+  padding-top: 46px;
+}
+
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1;
+  color: $black;
+  padding: 0 12px 3px 0;
+  position: relative;
+}
+
+.logo::after {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  content: '';
+  display: block;
+  width: 8px;
+  height: 8px;
+  background-color: $orange;
+  border-radius: 50%;
+}
