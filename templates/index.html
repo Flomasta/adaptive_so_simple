@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+          integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
 <body>
 <header class="header">
@@ -15,11 +18,11 @@
             <a href="#!" class="logo">Flomka</a>
             <nav class="nav" id="nav">
                 <ul class="nav-list ">
-                    <li class="nav-item"><a href="#!" class="nav-link active">Home</a></li>
-                    <li class="nav-item"><a href="#!" class="nav-link">Works</a></li>
-                    <li class="nav-item"><a href="#!" class="nav-link">Services</a></li>
-                    <li class="nav-item"><a href="#!" class="nav-link">About</a></li>
-                    <li class="nav-item"><a href="#!" class="nav-link">Contact</a></li>
+                    <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="#works" class="nav-link">Works</a></li>
+                    <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#contacts" class="nav-link">Contact</a></li>
                 </ul>
                 <button class="nav-button" id="nav-btn">
                     <img src="./images/icons/nav-open.svg" alt="Menu opener button" id="nav-btn-img">
@@ -27,7 +30,7 @@
             </nav>
         </div>
         <div class="header-row">
-            <div class="header-content">
+            <div class="header-content" data-aos="fade-up">
                 <h1 class="header-heading">Katun and Flomasta <br> <span>Designer & Developer</span></h1>
 
                 <p>We are portrait, fashion and lifestyle photographers living In New Vasyuki
@@ -38,14 +41,14 @@
             <div class="header-img">
                 <picture>
                     <source media="(max-width:799px)" srcset="./images/header/hero-mobile.png">
-                    <img src="./images/header/hero.png" alt="Header image">
+                    <img data-aos="fade-left" src="./images/header/hero.png" alt="Header image">
                 </picture>
 
             </div>
         </div>
     </div>
 </header>
-<section class="services">
+<section class="services" id="services">
     <div class="container">
         <div class="services-row">
             <div class="service-card"><img class="service-card-image" src="./images/services/01.svg" alt="UX/UI design">
@@ -66,44 +69,67 @@
         </div>
     </div>
 </section>
-<section class="portfolio">
+<section class="portfolio" id="works">
     <div class="container">
         <div class="portfolio-title">
             <h2 class="title-1">Portfolio</h2>
         </div>
-        <div class="project">
+        <div class="project" data-aos="flip-up">
             <img class="project-image" src="./images/portfolio/01.jpg" alt="Online fashion store">
             <h3 class="project-title"><a href="">Online fashion store - Homepage</a></h3>
         </div>
-        <div class="project">
+        <div class="project" data-aos="flip-up">
             <img class="project-image" src="./images/portfolio/02.jpg" alt="Reebok Store">
             <h3 class="project-title"><a href="">Reebok Store - Concept</a></h3>
         </div>
-        <div class="project">
+        <div class="project" data-aos="flip-up">
             <img class="project-image" src="./images/portfolio/03.jpg" alt="Braun Landing Page">
             <h3 class="project-title"><a href="">Braun Landing Page - Concept</a></h3>
         </div>
     </div>
 </section>
-<footer class="contacts">
+<section class="about" id="about" data-aos="fade-up"
+         data-aos-duration="1000">
+    <div class="container">
+        <div class="about-title">
+            <h2 class="title-1">About</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam dolor est eum itaque laudantium magnam
+                magni nam numquam odit. Ad dicta ea excepturi expedita nisi nobis, possimus quis sequi! Suscipit.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut dicta exercitationem ipsum modi molestias
+                nihil temporibus. Beatae facere maiores reiciendis saepe sapiente! Dolor doloribus esse inventore ipsa
+                magnam quia velit!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, doloremque ducimus et eveniet iste maiores
+                nobis possimus qui quibusdam ratione. Aliquam aliquid aut id placeat! Assumenda eum qui reiciendis
+                reprehenderit?
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam cum dolores error facilis ipsa, iure
+                minus nam officia officiis omnis perferendis quia reiciendis suscipit. Autem cum debitis officiis
+                quisquam ullam!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis delectus, veniam? Aliquam assumenda
+                ducimus, eaque eos hic id mollitia necessitatibus non omnis quam qui, sit suscipit totam. Dolorum,
+                voluptatibus voluptatum.</p>
+
+        </div>
+    </div>
+</section>
+<footer class="contacts" id="contacts">
     <div class="container">
         <div class="contacts-title">
             <h2 class="title-1">Contacts</h2>
         </div>
-        <div class="contacts-content">
+        <div class="contacts-content" data-aos="fade-down">
             <p>Want to know more or just chat?<br>
                 You are welcome!</p>
         </div>
-        <div class="contacts-button">
+        <div class="contacts-button" data-aos="fade-down">
             <a class="btn" href="#!">Send message</a>
         </div>
-        <div class="contacts-social">
+        <div class="contacts-social" data-aos="zoom-in">
             <a href="#!"><img src="./images/socials/LinkedIn.svg" alt="LinkedIn"></a>
             <a href="#!"><img src="./images/socials/Instargam.svg" alt="Instargam"></a>
             <a href="#!"><img src="./images/socials/Behance.svg" alt="Behance"></a>
             <a href="#!"><img src="./images/socials/Dribble.svg" alt="Dribble"></a>
         </div>
-        <div class="contact-footer">
+        <div class="contact-footer" data-aos="fade-up">
             <p>
                 Like me on <br>
                 LinkedIn, Instagram, Behance, Dribble
@@ -113,6 +139,25 @@
     </div>
 </footer>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+        integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="js/main.js"></script>
+
+
+<div class="b1">
+    <div class="b2 b2_m1">
+        <div class="b2__e1"></div>
+        <div class="b1__e2 b1__e2_m2"></div>
+    </div>
+</div>
+
+<div class="b1">
+    <div class="b2 b2_m1">
+        <div class="b2__e1"></div>
+        <div class="b1__e2 b1__e2_m2"></div>
+    </div>
+</div>
+
 </body>
 </html>

@@ -9,3 +9,8 @@ navBtn.onclick = () => {
         navBtnImg.src = './images/icons/nav-open.svg';
     }
 }
+AOS.init({
+    // disable: 'mobile',
+    // once: true
+});
+// https://michalsnik.github.io/aos/?utm_source=cdnjs&utm_medium=cdnjs_link&utm_campaign=cdnjs_library
