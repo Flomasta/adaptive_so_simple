@@ -1,33 +1,19 @@
 @import "reset.css";
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-
-//COLORS
-$gray: #F1F1F1;
-$black: #000000;
-$orange: #FDA300;
-$active: #606060;
-$button: #070707;
-$white: #FFFFFF;
-$hover: #3b3939;
-$bright_gray: #828282;
-
-//GLOBALS
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 body {
-  font-family: 'Poppins', sans-serif;
-  color: $black;
+  font-family: "Poppins", sans-serif;
+  color: #000000;
   font-size: 14px;
-
 }
 
 .container {
   max-width: 1230px;
   padding: 0 30px;
   margin: 0 auto;
-
 }
 
 a {
-  color: $black;
+  color: #000000;
 }
 
 .title-1 {
@@ -38,30 +24,25 @@ a {
 .btn {
   display: inline-block;
   padding: 7px 22px;
-  background-color: $button;
+  background-color: #070707;
   border-radius: 30px;
   font-size: 18px;
-  color: $white;
+  color: #FFFFFF;
   transition: background-color 0.2s ease-in, top 0.2s ease-in;
-
 }
 
 .btn:hover, .btn:focus {
-  background-color: $hover;
+  background-color: #3b3939;
 }
 
-
 .btn:active {
-  background-color: $black;
+  background-color: #000000;
   position: relative;
   top: 1px;
 }
 
-//HEADER
-
-
 .header {
-  background-color: $gray;
+  background-color: #F1F1F1;
   padding-top: 46px;
 }
 
@@ -83,15 +64,13 @@ a {
   position: absolute;
   right: 0;
   bottom: 0;
-  content: '';
+  content: "";
   display: block;
   width: 8px;
   height: 8px;
-  background-color: $orange;
+  background-color: #FDA300;
   border-radius: 50%;
 }
-
-//NAV
 
 .nav-list {
   display: flex;
@@ -100,16 +79,14 @@ a {
   font-size: 14px;
 }
 
-
 .nav-link.active {
-  color: $active;
+  color: #606060;
 }
 
 .nav-button {
   display: none;
 }
 
-//HEADER CONTENT
 .header-row {
   display: flex;
   justify-content: space-between;
@@ -132,8 +109,6 @@ a {
   line-height: 2;
 }
 
-
-//SERVICES
 .services {
   padding: 90px 0;
 }
@@ -165,10 +140,9 @@ a {
   line-height: 2;
 }
 
-//PORTFOLIO
 .portfolio {
   padding: 90px 0;
-  background-color: $gray;
+  background-color: #F1F1F1;
 }
 
 .portfolio-title {
@@ -193,15 +167,12 @@ a {
   text-decoration: underline;
 }
 
-//ABOUT
-
 .about {
   padding: 90px 0 0 0;
 }
 
 .about-title {
   text-align: center;
-
 }
 
 .about-title p {
@@ -210,27 +181,20 @@ a {
   font-size: 17px;
 }
 
-
-//FOOTER
 .contacts {
   padding: 90px 0;
   text-align: center;
 }
 
-
 .contacts-title {
   margin-bottom: 40px;
 }
-
 
 .contacts-content {
   font-size: 18px;
   max-width: 480px;
   margin: 0 auto 40px;
-
-
 }
-
 
 .contacts-content p + p {
   margin-top: 1em;
@@ -240,17 +204,106 @@ a {
   margin-bottom: 80px;
 }
 
-
 .contacts-social {
   display: flex;
   justify-content: center;
   column-gap: 60px;
   align-items: center;
   margin-bottom: 40px;
-
 }
 
 .contact-footer {
-  color: $bright_gray;
-
+  color: #828282;
 }
+
+@media (max-width: 1230px) {
+  .nav-list {
+    display: none;
+  }
+  .nav-button {
+    display: block;
+  }
+  .nav.open .nav-list {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #FFFFFF;
+    padding: 46px 30px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    font-size: 34px;
+    font-weight: 600;
+  }
+  .nav-link {
+    color: #606060;
+  }
+  .nav-link.active {
+    color: #000000;
+  }
+  .nav-button {
+    position: absolute;
+    z-index: 9;
+    top: 46px;
+    right: 30px;
+  }
+  .nav.open .nav-button {
+    position: fixed;
+  }
+  .header-row {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+  .header-content {
+    margin-top: 0;
+  }
+  .header-nav {
+    margin-bottom: 50px;
+  }
+  .header-img {
+    text-align: center;
+  }
+}
+@media (max-width: 700px) {
+  .header-heading {
+    font-size: 34px;
+  }
+  .header-heading span {
+    font-size: 28px;
+  }
+  .services {
+    padding: 60px 0;
+  }
+  .portfolio {
+    padding: 60px 0;
+  }
+  .portfolio-title {
+    margin-bottom: 50px;
+  }
+  .project-image {
+    margin-bottom: 30px;
+  }
+  .project + .project {
+    margin-bottom: 55px;
+  }
+  .contacts {
+    padding: 60px 0;
+  }
+  .contacts-title {
+    margin-bottom: 20px;
+  }
+  .contacts-content {
+    margin-bottom: 20px;
+  }
+  .contacts-button {
+    margin-bottom: 70px;
+  }
+  .contacts-social {
+    margin-bottom: 20px;
+    column-gap: 50px;
+  }
+}
+
+/*# sourceMappingURL=media.css.map */
